@@ -30,3 +30,8 @@ class SubscriptionAdmin(admin.ModelAdmin):
         "status",
         "plan",
     )
+    search_fields = [
+        'subscriber',
+        'email',
+    ]
+
