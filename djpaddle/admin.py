@@ -31,6 +31,6 @@ class SubscriptionAdmin(admin.ModelAdmin):
         "plan",
     )
     search_fields = [
-        'email',
+        'subscriber',
     ]
 
