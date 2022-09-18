@@ -34,4 +34,6 @@ class SubscriptionAdmin(admin.ModelAdmin):
         'subscriber__email',
         'subscriber__name',
     ]
-
+    autocomplete_fields = (
+        "subscriber",
+    )
