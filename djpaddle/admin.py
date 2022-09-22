@@ -1,6 +1,5 @@
 from django.contrib import admin
 
-from . import models
 from .models import Checkout, Plan
 
 admin.site.register(Checkout)
