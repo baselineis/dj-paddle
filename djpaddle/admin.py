@@ -1,12 +1,12 @@
 from django.contrib import admin
 
-from .models import Checkout, Plan
+from .models import Checkout, Plan, Price
 
 admin.site.register(Checkout)
 
 
 class PriceInline(admin.TabularInline):
-    model = models.Price
+    model = Price
 
 
 @admin.register(Plan)
