@@ -31,8 +31,7 @@ class SubscriptionAdmin(admin.ModelAdmin):
         "plan",
     )
     search_fields = [
-        'subscriber__email',
-        'subscriber__name',
+        'email',
     ]
     autocomplete_fields = (
         "subscriber",
