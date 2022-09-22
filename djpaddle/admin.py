@@ -18,21 +18,21 @@ class PlanAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(models.Subscription)
-class SubscriptionAdmin(admin.ModelAdmin):
-    list_display = (
-        "subscriber",
-        "email",
-        "status",
-        "plan",
-    )
-    list_filter = (
-        "status",
-        "plan",
-    )
-    search_fields = [
-        'email',
-    ]
-    autocomplete_fields = (
-        "subscriber",
-    )
+#@admin.register(models.Subscription)
+#class SubscriptionAdmin(admin.ModelAdmin):
+#    list_display = (
+#        "subscriber",
+#        "email",
+#        "status",
+#        "plan",
+#    )
+#    list_filter = (
+#        "status",
+#        "plan",
+#    )
+#    search_fields = [
+#        'email',
+#    ]
+#    autocomplete_fields = (
+#        "subscriber",
+#    )
